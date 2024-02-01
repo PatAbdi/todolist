@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Categories from './Components/Category/Categories';
+import Inputform from './Components/Inputform';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-screen top-0  bg-gradient-to-t from-purple-500 via-purple-400 to-purple-300 text-white flex flex-col-reverse justify-center">
+      
+      <Inputform/>
+
+      <Categories/>
+
+      
     </div>
   );
 }
